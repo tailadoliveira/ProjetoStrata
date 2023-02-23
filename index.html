@@ -15,15 +15,17 @@
 <body>
     
     <header class="main-header">
-        <a href="index.html" class="main-header-link">
+        <a href="index.html" class="main-header-link imagem-link">
             <img src="images/avatar.jpg" alt="Avatar">
         </a>
         <h1 class="main-header-title">
             Trabalhos e groselhas de <br>
             <strong>Daniel Tapias Morales</strong>, <br>
-            um zé ninguém qualquer<br>
-            Retirado de <a href="http://html5up.net" class="main-header-link">html5up</a>.
+            um zé ninguém qualquer
         </h1>
+        <p>
+            Retirado de <a href="http://html5up.net" class="main-header-link">html5up.net</a>
+        </p>
     </header>
 
     <main class="main-content">
@@ -40,8 +42,11 @@
 
           <h3>Recent Works</h3>
 
+        <div class="row">
+            <div class="col-2">
+
             <article class="recent-works-card">
-                <a href="images/fulls/01.jpg">
+                <a class="imagem-link"href="images/fulls/01.jpg">
                    <img src="images/thumbs/01.jpg" alt="Carro em rua sem movimento">
                 </a>
                 <p class="recent-works-card-title">Magna sed consequat tempus</p>
@@ -49,7 +54,7 @@
             </article>
 
             <article class="recent-works-card">
-                <a href="images/fulls/02.jpg">
+                <a class="imagem-link" href="images/fulls/02.jpg">
                    <img src="images/thumbs/02.jpg" alt="Floresta">
                 </a>
                 <p class="recent-works-card-title">Ultricies lacinia interdum</p>
@@ -57,15 +62,17 @@
             </article>
 
             <article class="recent-works-card">
-                <a href="images/fulls/03.jpg">
+                <a class="imagem-link" href="images/fulls/03.jpg">
                    <img src="images/thumbs/03.jpg" alt="Biblioteca">
                 </a>
                 <p class="recent-works-card-title">Tortor metus commodo</p>
                 <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
             </article>
+         </div>
+         <div class="col-2">
 
             <article class="recent-works-card">
-                <a href="images/fulls/04.jpg">
+                <a class="imagem-link" href="images/fulls/04.jpg">
                    <img src="images/thumbs/04.jpg" alt="Os pés de um homem andando">
                 </a>
                 <p class="recent-works-card-title">Quam neque phasellus</p>
@@ -73,7 +80,7 @@
             </article>
 
             <article class="recent-works-card">
-                <a href="images/fulls/05.jpg">
+                <a class="imagem-link" href="images/fulls/05.jpg">
                    <img src="images/thumbs/05.jpg" alt="Uma montanha gelada">
                 </a>
                 <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
@@ -81,14 +88,17 @@
             </article>
 
             <article class="recent-works-card">
-                <a href="images/fulls/06.jpg">
+                <a class="imagem-link" href="images/fulls/06.jpg">
                    <img src="images/thumbs/06.jpg" alt="Uma casa na floresta">
                 </a>
                 <p class="recent-works-card-title">Risus ornare lacinia</p>
                 <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
             </article>
+         </div>
+        </div>
 
-            <a href="#" title="Veja mais" class="button-default"> =Veja Portifolio completo</a>
+
+            <a href="#" title="Veja mais" class="button-default">Veja Portifolio completo</a>
 
       </section>
 
@@ -97,37 +107,51 @@
          
          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quaerat id iusto repellat delectus doloribus, aliquam dolore quis autem impedit maxime sunt provident temporibus odio voluptas? Exercitationem modi optio quia.</p>
 
-         <form action="#" method="POST">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome">
+        <div class="row">
+            <div class="col-2-3">
 
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email">
+                <form action="#" method="POST">
+                    <div class="row">
+                        <div class="col-2">
+                         <label for="nome">Nome</label>
+                         <input placeholder="Nome Completo" type="text" name="nome" id="nome">
+                        </div>
 
-            <label for="mensagem">Digite sua mensagem</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
+                        <div class="row">
+                         <label for="email">Email</label>
+                         <input placeholder="Digite seu Email" type="text" name="email" id="email">
+                        </div>
 
-            <input type="submit" value="Enviar">
-         </form>
+                    </div>
+        
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+        
+                    <input type="submit" value="Enviar" class="button-default button-default-stroke button-default-big">
+                </form>
 
-         <address>
+            </div>
 
-            <p>
-                <span>Endereço</span>
-                1234 Somewhere Rd. Nashville, TN 00000 United States
-            </p>
+            <div class="col-1-3">
+                <address>
 
-            <p>
-                <span>Telefone</span>
-                000-000-000
-            </p>
-
-            <p>
-                <span>Email</span>
-                email@server.com
-            </p>
-
-         </address>
+                    <p>
+                        <span>Endereço: </span>
+                        1234 Somewhere Rd. Nashville, TN 00000 United States
+                    </p>
+        
+                    <p>
+                        <span>Telefone: </span>
+                        000-000-000
+                    </p>
+        
+                    <p>
+                        <span>Email: </span>
+                        email@server.com
+                    </p>
+                 </address>
+            </div>
+        </div> <!--row-->
 
       </section>
 
@@ -147,7 +171,8 @@
         <h6>título h6</h6>
 
         <blockquote cite="htttp://developer.mozilla.org">
-         Esta é uma citação tirada da Mozilla Developer Center.
+         <p>Esta é uma citação tirada da
+             Mozilla Developer Center. </p>
         </blockquote>
 
         <p>
@@ -156,14 +181,11 @@
         </p>
  
         <h4>Preformatado</h4>
-
-        <pre> 
-             <code>
+        <pre><code>
 &lt;script&gt;
     alert('oi');
  &lt;/script&gt;
-             </code>
-        </pre>
+        </code></pre>
 
         <h4>Listas</h4>
 
@@ -269,7 +291,7 @@
                     <td>29,99</td>
                 </tr>
              </tbody>
-            </table>
+        </table>
 
              <h5>Alternate</h5> 
 
@@ -338,7 +360,38 @@
             <button  class="button-default button-default-full button-default-small">Default</button>
             <button  class="button-default button-default-full button-default-small button-default-stroke">Default</button>
         </p>
+        <input type="submit" class="button-default" value="mandar">
 
+        <h5>Forms</h5>
+
+        <form action="#" method="post">
+
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <select>
+            <option value="0">Selecione ...</option>
+            <option value="1"> HTML</option>
+            <option value="2"> CSS</option>
+            <option value="3"> Javascript</option>
+        </select>
+
+        <label><input type="radio" value="baixa" name="prioridade">Baixa Prioridade</label>
+        <label><input type="radio" value="media" name="prioridade">Média Prioridade</label>
+        <label><input type="radio" value="alta" name="prioridade">Alta Prioridade</label>
+
+        <label> <input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+        <label> <input type="checkbox" name="human" value="1">Sou Humano</label>
+
+        <label for="msg">Mensagem:</label>
+        <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
+
+        <input type="submit" class="button-default button-default-big" value="Enviar">
+        <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+        </form>
 
       </section>
 
@@ -349,22 +402,21 @@
             <img src="images/fulls/01.jpg" alt="Rua sem movimento">
           </div>
 
-          <div class="gallery-thumb">
-            <img src="images/thumbs/01.jpg" alt="">
-            <img src="images/thumbs/02.jpg" alt="">
-            <img src="images/thumbs/03.jpg" alt="">
-            <img src="images/thumbs/04.jpg" alt="">
-            <img src="images/thumbs/05.jpg" alt="">
-            <img src="images/thumbs/06.jpg" alt="">
-            <img src="images/thumbs/01.jpg" alt="">
-            <img src="images/thumbs/02.jpg" alt="">
-            <img src="images/thumbs/03.jpg" alt="">
+          <div class="gallery-thumb row">
+            <img class="col-1-3" src="images/thumbs/01.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/02.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/03.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/04.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/05.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/06.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/01.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/02.jpg" alt="">
+            <img class="col-1-3" src="images/thumbs/03.jpg" alt="">
           </div>
 
           <h4>Left &amp; Right</h4>
           <p>
              <img src="images/avatar.jpg" alt="Avatar" class="img-left"> ipsum dolor sit amet consectetur adipisicing elit. Aut necessitatibus nesciunt est similique consequatur nihil laborum impedit placeat laboriosam autem sit dolor molestias quis, commodi ad harum assumenda, neque officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, culpa perferendis consequatur dolores dolorem facere praesentium labore architecto in eligendi corrupti reiciendis adipisci autem, cumque ipsum corporis. Qui, debitis aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos, sunt, id suscipit ratione inventore deleniti voluptas rem molestias iusto eligendi illo aut quo! Aut, laboriosam. Soluta esse perspiciatis libero? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto tempore rem accusantium repellendus aperiam aspernatur blanditiis, quae maxime deleniti. Nam quo eius, cupiditate nemo illum magnam quasi natus mollitia vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nam qui, nobis ea corrupti aliquid neque repellat dolorum, praesentium ipsum porro esse quam rem, ad suscipit ducimus laborum explicabo optio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, officia odit. Facilis sed, in quia libero blanditiis delectus facere, accusantium tempora similique et eum expedita beatae officia dolores, minus quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aspernatur non adipisci optio cumque laboriosam corporis explicabo deleniti at soluta obcaecati consequatur voluptatum possimus, in eveniet itaque dignissimos debitis facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil et expedita porro impedit aspernatur consectetur voluptas quos saepe dolorem repellat ducimus, distinctio, nisi earum deleniti rem ipsum architecto veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat atque illo modi nihil laudantium qui adipisci natus optio a debitis quia ipsum dolor ullam enim eius tempora, repellat aliquid explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea odio inventore necessitatibus ratione magni assumenda, id non nesciunt tempora quas sequi vitae, aspernatur facilis nulla fugiat numquam iure quaerat maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ducimus sit qui quas voluptates consectetur laboriosam, vitae architecto eius dolorem nulla. Facilis, fugiat natus voluptatibus quasi at inventore rem libero.
-
           </p>
 
           <p>
@@ -376,8 +428,12 @@
 
     </main>
 
-     <footer class="main-footer"></footer>
+     <footer class="main-footer">
+        <ul class="copyright">
+            <li>© Untitled</li><li>Design: <a href="http://html5up.net">HTLM5 UP</a></li>
+        </ul>
+
+     </footer>
 
 </body>
 </html>
-
